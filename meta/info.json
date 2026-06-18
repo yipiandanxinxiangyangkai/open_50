@@ -1,0 +1,160 @@
+{
+    "codebase_version": "v3.0",
+    "robot_type": "lingzu_highcam_pi05",
+    "total_episodes": 50,
+    "total_frames": 20814,
+    "total_tasks": 1,
+    "chunks_size": 1000,
+    "data_files_size_in_mb": 20,
+    "video_files_size_in_mb": 20,
+    "fps": 30,
+    "splits": {
+        "train": "0:50"
+    },
+    "data_path": "data/chunk-{chunk_index:03d}/file-{file_index:03d}.parquet",
+    "video_path": "videos/{video_key}/chunk-{chunk_index:03d}/file-{file_index:03d}.mp4",
+    "features": {
+        "actions": {
+            "dtype": "float32",
+            "names": [
+                "left.joint_1.pos",
+                "left.joint_2.pos",
+                "left.joint_3.pos",
+                "left.joint_4.pos",
+                "left.joint_5.pos",
+                "left.joint_6.pos",
+                "left.joint_7.pos",
+                "right.joint_1.pos",
+                "right.joint_2.pos",
+                "right.joint_3.pos",
+                "right.joint_4.pos",
+                "right.joint_5.pos",
+                "right.joint_6.pos",
+                "right.joint_7.pos",
+                "left_hand.joint_1.pos",
+                "left_hand.joint_2.pos",
+                "left_hand.joint_3.pos",
+                "left_hand.joint_4.pos",
+                "left_hand.joint_5.pos",
+                "left_hand.joint_6.pos",
+                "left_hand.joint_7.pos",
+                "left_hand.joint_8.pos",
+                "left_hand.joint_9.pos",
+                "left_hand.joint_10.pos",
+                "right_hand.joint_1.pos",
+                "right_hand.joint_2.pos",
+                "right_hand.joint_3.pos",
+                "right_hand.joint_4.pos",
+                "right_hand.joint_5.pos",
+                "right_hand.joint_6.pos",
+                "right_hand.joint_7.pos",
+                "right_hand.joint_8.pos",
+                "right_hand.joint_9.pos",
+                "right_hand.joint_10.pos"
+            ],
+            "shape": [
+                34
+            ]
+        },
+        "state": {
+            "dtype": "float32",
+            "names": [
+                "left.joint_1.pos",
+                "left.joint_2.pos",
+                "left.joint_3.pos",
+                "left.joint_4.pos",
+                "left.joint_5.pos",
+                "left.joint_6.pos",
+                "left.joint_7.pos",
+                "right.joint_1.pos",
+                "right.joint_2.pos",
+                "right.joint_3.pos",
+                "right.joint_4.pos",
+                "right.joint_5.pos",
+                "right.joint_6.pos",
+                "right.joint_7.pos",
+                "left_hand.joint_1.pos",
+                "left_hand.joint_2.pos",
+                "left_hand.joint_3.pos",
+                "left_hand.joint_4.pos",
+                "left_hand.joint_5.pos",
+                "left_hand.joint_6.pos",
+                "left_hand.joint_7.pos",
+                "left_hand.joint_8.pos",
+                "left_hand.joint_9.pos",
+                "left_hand.joint_10.pos",
+                "right_hand.joint_1.pos",
+                "right_hand.joint_2.pos",
+                "right_hand.joint_3.pos",
+                "right_hand.joint_4.pos",
+                "right_hand.joint_5.pos",
+                "right_hand.joint_6.pos",
+                "right_hand.joint_7.pos",
+                "right_hand.joint_8.pos",
+                "right_hand.joint_9.pos",
+                "right_hand.joint_10.pos"
+            ],
+            "shape": [
+                34
+            ]
+        },
+        "image": {
+            "dtype": "video",
+            "shape": [
+                480,
+                640,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channels"
+            ],
+            "info": {
+                "video.height": 480,
+                "video.width": 640,
+                "video.codec": "h264",
+                "video.pix_fmt": "yuv420p",
+                "video.is_depth_map": false,
+                "video.fps": 30,
+                "video.channels": 3,
+                "has_audio": false
+            }
+        },
+        "timestamp": {
+            "dtype": "float32",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "frame_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "episode_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "task_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        }
+    }
+}
